@@ -1,0 +1,5 @@
+D:\TFS_Github\ArticleProject\ArticleProject.DAL\bin\Debug\netstandard2.0\ArticleProject.DAL.deps.json
+D:\TFS_Github\ArticleProject\ArticleProject.DAL\bin\Debug\netstandard2.0\ArticleProject.DAL.dll
+D:\TFS_Github\ArticleProject\ArticleProject.DAL\obj\Debug\netstandard2.0\ArticleProject.DAL.csprojAssemblyReference.cache
+D:\TFS_Github\ArticleProject\ArticleProject.DAL\obj\Debug\netstandard2.0\ArticleProject.DAL.AssemblyInfoInputs.cache
+D:\TFS_Github\ArticleProject\ArticleProject.DAL\obj\Debug\netstandard2.0\ArticleProject.DAL.AssemblyInfo.cs

@@ -5,7 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\ArticleProject.BL\ArticleProject.BL.csproj" />
+    <ProjectReference Include="..\ArticleProject.Core\ArticleProject.Core.csproj" />
+    <ProjectReference Include="..\ArticleProject.DAL\ArticleProject.DAL.csproj" />
+    <ProjectReference Include="..\ArticleProject.Entities\ArticleProject.Entities.csproj" />
   </ItemGroup>
 
 
