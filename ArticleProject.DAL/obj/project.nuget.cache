@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "vUCyeJzbI7wzRr5lhPH0DHlSCrItWNh3PnrGmA1jO8HIE25aEdPfLaZTuR5VPsURmBQ7hRoKNKkUAINogZ0TKQ==",
+  "success": true,
+  "projectFilePath": "D:\\TFS_Github\\ArticleProject\\ArticleProject.DAL\\ArticleProject.DAL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\emreo\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\emreo\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
