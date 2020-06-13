@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Autofac;
 
 namespace ArticleProject.Api
 {
@@ -17,10 +18,13 @@ namespace ArticleProject.Api
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
-                .ConfigureWebHostDefaults(webBuilder =>
-                {
-                    webBuilder.UseStartup<Startup>();
-                });
+            Host.CreateDefaultBuilder(args).UseServiceProviderFactory(new Autofac.Extensions.DependencyInjection.AutofacServiceProviderFactory()).ConfigureContainer<ContainerBuilder>(builder =>
+            {
+                builder.RegisterModule(new BL.DependencyResolvers.Autofac.AutofacBussinesModule());
+            }).ConfigureWebHostDefaults(webBuilder =>
+            {
+                webBuilder.UseStartup<Startup>();
+            });
+
     }
 }

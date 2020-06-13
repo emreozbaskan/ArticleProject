@@ -9,7 +9,7 @@ namespace ArticleProject.DAL.Concrete.EntityFramework
     using Core.Entities.Concrete;
     using Context;
 
-    public class EFUserRepository : EFEntityRepositoryBase<User, ArticleContext>, IUserRepository
+    public class EFUserRepository : EFEntityRepositoryBase<UserAccount, ArticleContext>, IUserRepository
     {
 
     }

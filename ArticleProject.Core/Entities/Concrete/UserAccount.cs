@@ -7,7 +7,7 @@ namespace ArticleProject.Core.Entities.Concrete
 {
     using Entities.Abstract;
 
-    public class User : IEntity
+    public class UserAccount : IEntity
     {
         public int Id { get; set; }
         public string FirstName { get; set; }

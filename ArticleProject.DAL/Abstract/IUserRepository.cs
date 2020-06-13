@@ -6,7 +6,7 @@ namespace ArticleProject.DAL.Abstract
 {
     using Core.DAL;
     using Core.Entities.Concrete;
-    public interface IUserRepository : IEntityRepository<User>
+    public interface IUserRepository : IEntityRepository<UserAccount>
     {
 
     }

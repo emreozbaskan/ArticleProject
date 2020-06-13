@@ -5,8 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Abstract\" />
-    <Folder Include="Concrete\" />
+    <PackageReference Include="Autofac" Version="5.2.0" />
+    <PackageReference Include="Autofac.Extras.DynamicProxy" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ArticleProject.Core\ArticleProject.Core.csproj" />
+    <ProjectReference Include="..\ArticleProject.DAL\ArticleProject.DAL.csproj" />
+    <ProjectReference Include="..\ArticleProject.Entities\ArticleProject.Entities.csproj" />
   </ItemGroup>
 
 </Project>

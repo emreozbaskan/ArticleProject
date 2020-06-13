@@ -1,0 +1,16 @@
+D:\TFS_Github\ArticleProject\ArticleProject.BL\bin\Debug\netstandard2.0\ArticleProject.BL.deps.json
+D:\TFS_Github\ArticleProject\ArticleProject.BL\bin\Debug\netstandard2.0\ArticleProject.BL.dll
+D:\TFS_Github\ArticleProject\ArticleProject.BL\bin\Debug\netstandard2.0\ArticleProject.BL.pdb
+D:\TFS_Github\ArticleProject\ArticleProject.BL\obj\Debug\netstandard2.0\ArticleProject.BL.AssemblyInfoInputs.cache
+D:\TFS_Github\ArticleProject\ArticleProject.BL\obj\Debug\netstandard2.0\ArticleProject.BL.AssemblyInfo.cs
+D:\TFS_Github\ArticleProject\ArticleProject.BL\obj\Debug\netstandard2.0\ArticleProject.BL.dll
+D:\TFS_Github\ArticleProject\ArticleProject.BL\obj\Debug\netstandard2.0\ArticleProject.BL.pdb
+D:\TFS_Github\ArticleProject\ArticleProject.BL\bin\Debug\netstandard2.0\ArticleProject.Core.dll
+D:\TFS_Github\ArticleProject\ArticleProject.BL\bin\Debug\netstandard2.0\ArticleProject.DAL.dll
+D:\TFS_Github\ArticleProject\ArticleProject.BL\bin\Debug\netstandard2.0\ArticleProject.Entities.dll
+D:\TFS_Github\ArticleProject\ArticleProject.BL\bin\Debug\netstandard2.0\ArticleProject.Core.pdb
+D:\TFS_Github\ArticleProject\ArticleProject.BL\bin\Debug\netstandard2.0\ArticleProject.DAL.pdb
+D:\TFS_Github\ArticleProject\ArticleProject.BL\bin\Debug\netstandard2.0\ArticleProject.Entities.pdb
+D:\TFS_Github\ArticleProject\ArticleProject.BL\obj\Debug\netstandard2.0\ArticleProject.BL.csprojAssemblyReference.cache
+D:\TFS_Github\ArticleProject\ArticleProject.BL\obj\Debug\netstandard2.0\ArticleProject.BL.csproj.CopyComplete
+D:\TFS_Github\ArticleProject\ArticleProject.BL\obj\Debug\netstandard2.0\ArticleProject.BL.csproj.CoreCompileInputs.cache

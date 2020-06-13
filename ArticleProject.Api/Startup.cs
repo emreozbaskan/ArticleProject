@@ -9,9 +9,15 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace ArticleProject.Api
 {
+    using Core.Utilities.Security.JWT;
+    using Core.Utilities.Security.Encyription;
+    using ArticleProject.DAL.Concrete.EntityFramework.Context;
+    using Microsoft.EntityFrameworkCore;
+
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -25,6 +31,29 @@ namespace ArticleProject.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            //JWT Token register
+            var TokenOptions = Configuration.GetSection("TokenOptions").Get<TokenOptions>();
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
+            {
+                options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters()
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateLifetime = true,
+                    ValidIssuer = TokenOptions.Issuer,
+                    ValidAudience = TokenOptions.Audience,
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = SecurityKeyHelper.CreateSecurityKey(TokenOptions.SecurityKey)
+                };
+            });
+
+            //Context Register
+            //services.AddDbContext<ArticleContext>(options =>
+            //{
+            //    options.UseSqlServer(Configuration.GetConnectionString("DB"), y => { y.MigrationsAssembly("ArticleProject.DAL"); });
+            //});
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -37,7 +66,7 @@ namespace ArticleProject.Api
 
             app.UseRouting();
 
-            app.UseAuthorization();
+            app.UseAuthentication();
 
             app.UseEndpoints(endpoints =>
             {
