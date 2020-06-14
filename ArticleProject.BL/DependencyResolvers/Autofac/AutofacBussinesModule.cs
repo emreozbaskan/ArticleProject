@@ -11,12 +11,16 @@ namespace ArticleProject.BL.DependencyResolvers.Autofac
     using DAL.Abstract;
     using Core.Utilities.Security.JWT;
 
-    public class AutofacBussinesModule: Module
+    public class AutofacBussinesModule : Module
     {
         protected override void Load(ContainerBuilder builder)
         {
             builder.RegisterType<UserManager>().As<IUserService>();
             builder.RegisterType<EFUserRepository>().As<IUserRepository>();
+            builder.RegisterType<CategoryManager>().As<ICategoryService>();
+            builder.RegisterType<EFCategoryRepository>().As<ICategoryRepository>();
+            builder.RegisterType<CommentManager>().As<ICommentService>();
+            builder.RegisterType<EFCommentRepository>().As<ICommentRepository>();
 
             builder.RegisterType<AutManager>().As<IAutService>();
             builder.RegisterType<JWTHelper>().As<ITokenHelper>();

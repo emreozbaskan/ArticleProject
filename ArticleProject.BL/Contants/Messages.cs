@@ -12,5 +12,15 @@ namespace ArticleProject.BL.Contants
         public static string UserAlreadyExits = "Email Sistemde mevcuttur";
         public static string UserRegistered = "Kullanıcı sisteme başarılı bir şekilde kaydedildi";
         public static string AccessTokenCreated = "Access Token başarılı bir şekilde oluşturuldu";
+
+        public static string CategoryAdd = "Category başarılı bir şekilde eklendi";
+        public static string CategoryUpdate = "Category başarılı bir şekilde güncellendi";
+        public static string CategoryDelete = "Category başarılı bir şekilde silindi";
+
+        public static string CommentAdd = "Yorum başarılı bir şekilde eklendi";
+        public static string CommentUpdate = "Yorum başarılı bir şekilde güncellendi";
+        public static string CommentDelete = "Yorum başarılı bir şekilde silindi";
+
+
     }
 }

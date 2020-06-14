@@ -70,5 +70,8 @@ D:\TFS_Github\ArticleProject\ArticleProject.Api\bin\Debug\netcoreapp3.1\Autofac.
 D:\TFS_Github\ArticleProject\ArticleProject.Api\bin\Debug\netcoreapp3.1\Autofac.Extras.DynamicProxy.dll
 D:\TFS_Github\ArticleProject\ArticleProject.Api\bin\Debug\netcoreapp3.1\Castle.Core.dll
 D:\TFS_Github\ArticleProject\ArticleProject.Api\bin\Debug\netcoreapp3.1\Autofac.Extensions.DependencyInjection.dll
+D:\TFS_Github\ArticleProject\ArticleProject.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+D:\TFS_Github\ArticleProject\ArticleProject.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\TFS_Github\ArticleProject\ArticleProject.Api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 D:\TFS_Github\ArticleProject\ArticleProject.Api\obj\Debug\netcoreapp3.1\ArticleProject.Api.csproj.CoreCompileInputs.cache
 D:\TFS_Github\ArticleProject\ArticleProject.Api\obj\Debug\netcoreapp3.1\ArticleProject.Api.MvcApplicationPartsAssemblyInfo.cache

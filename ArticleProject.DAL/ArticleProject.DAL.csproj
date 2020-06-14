@@ -5,6 +5,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20200613192837_article.cs" />
+    <Compile Remove="Migrations\20200613192837_article.Designer.cs" />
+    <Compile Remove="Migrations\20200613195258_article.cs" />
+    <Compile Remove="Migrations\20200613195258_article.Designer.cs" />
+    <Compile Remove="Migrations\20200614185613_article_category_comment.cs" />
+    <Compile Remove="Migrations\20200614185613_article_category_comment.Designer.cs" />
+    <Compile Remove="Migrations\20200614185747_article_category_comment.cs" />
+    <Compile Remove="Migrations\20200614185747_article_category_comment.Designer.cs" />
+    <Compile Remove="Migrations\20200614190132_article_category_comment.cs" />
+    <Compile Remove="Migrations\20200614190132_article_category_comment.Designer.cs" />
+    <Compile Remove="Migrations\20200614190403_article_category_comment.cs" />
+    <Compile Remove="Migrations\20200614190403_article_category_comment.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.5">
       <PrivateAssets>all</PrivateAssets>
