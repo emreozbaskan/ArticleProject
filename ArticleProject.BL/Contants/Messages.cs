@@ -21,6 +21,10 @@ namespace ArticleProject.BL.Contants
         public static string CommentUpdate = "Yorum başarılı bir şekilde güncellendi";
         public static string CommentDelete = "Yorum başarılı bir şekilde silindi";
 
+        public static string ArticleAdd = "Yazı başarılı bir şekilde eklendi";
+        public static string ArticleUpdate = "Yazı başarılı bir şekilde güncellendi";
+        public static string ArticleDelete = "Yazı başarılı bir şekilde silindi";
+
 
     }
 }
