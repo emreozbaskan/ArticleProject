@@ -6,13 +6,14 @@ using System.Text;
 namespace ArticleProject.DAL.Concrete.EntityFramework.Context
 {
     using ArticleProject.Entities.Concrete;
+    using Castle.Core.Configuration;
     using Core.Entities.Concrete;
 
     public class ArticleContext : DbContext
     {
-        public ArticleContext()
+        public ArticleContext(DbContextOptions<ArticleContext> options) : base(options)
         {
-
+            
         }
 
         public DbSet<UserAccount> UserAccount { get; set; }
@@ -45,7 +46,8 @@ namespace ArticleProject.DAL.Concrete.EntityFramework.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=EMREOZBASKAN\\SQL2016;Database=ArticleDb;uid=sa;pwd=1;");
+            //optionsBuilder.UseSqlServer("Server=EMREOZBASKAN\\SQL2016;Database=ArticleDb;uid=sa;pwd=1;");
+            
         }
     }
 }

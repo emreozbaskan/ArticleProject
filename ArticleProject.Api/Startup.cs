@@ -18,6 +18,7 @@ namespace ArticleProject.Api
     using Core.Utilities.IoC;
     using Core.Extensions;
     using Core.DependencyResolvers;
+    using Microsoft.EntityFrameworkCore;
 
     public class Startup
     {
@@ -50,10 +51,11 @@ namespace ArticleProject.Api
             });
 
             //Context Register
-            //services.AddDbContext<ArticleContext>(options =>
-            //{
-            //    options.UseSqlServer(Configuration.GetConnectionString("DB"), y => { y.MigrationsAssembly("ArticleProject.DAL"); });
-            //});
+            services.AddDbContext<DAL.Concrete.EntityFramework.Context.ArticleContext>(options =>
+            {
+                options.UseSqlServer(Configuration.GetConnectionString("DB"), y => { y.MigrationsAssembly("ArticleProject.DAL"); });
+                
+            });
 
             services.AddDependencyResolvers(new ICoreModule[] {
                 new CoreModule()
