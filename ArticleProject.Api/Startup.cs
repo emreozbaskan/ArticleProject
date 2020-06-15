@@ -15,8 +15,9 @@ namespace ArticleProject.Api
 {
     using Core.Utilities.Security.JWT;
     using Core.Utilities.Security.Encyription;
-    using ArticleProject.DAL.Concrete.EntityFramework.Context;
-    using Microsoft.EntityFrameworkCore;
+    using Core.Utilities.IoC;
+    using Core.Extensions;
+    using Core.DependencyResolvers;
 
     public class Startup
     {
@@ -53,6 +54,10 @@ namespace ArticleProject.Api
             //{
             //    options.UseSqlServer(Configuration.GetConnectionString("DB"), y => { y.MigrationsAssembly("ArticleProject.DAL"); });
             //});
+
+            services.AddDependencyResolvers(new ICoreModule[] {
+                new CoreModule()
+            });
 
         }
 

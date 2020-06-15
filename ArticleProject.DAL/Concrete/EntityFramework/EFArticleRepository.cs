@@ -18,12 +18,12 @@ namespace ArticleProject.DAL.Concrete.EntityFramework
         {
             using (ArticleContext DB = new ArticleContext())
             {
-                var myResult = DB.Set<Article>();
+                var myResult = DB.Set<Article>().AsQueryable();
                 if (filter != null)
-                    myResult.Where(filter);
+                    myResult = myResult.Where(filter);
                 return myResult.Skip(skip).Take(take).ToList();
             }
         }
-        
+
     }
 }

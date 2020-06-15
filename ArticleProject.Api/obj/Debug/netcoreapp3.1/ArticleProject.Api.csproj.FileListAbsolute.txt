@@ -75,3 +75,5 @@ D:\TFS_Github\ArticleProject\ArticleProject.Api\bin\Debug\netcoreapp3.1\Microsof
 D:\TFS_Github\ArticleProject\ArticleProject.Api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 D:\TFS_Github\ArticleProject\ArticleProject.Api\obj\Debug\netcoreapp3.1\ArticleProject.Api.csproj.CoreCompileInputs.cache
 D:\TFS_Github\ArticleProject\ArticleProject.Api\obj\Debug\netcoreapp3.1\ArticleProject.Api.MvcApplicationPartsAssemblyInfo.cache
+D:\TFS_Github\ArticleProject\ArticleProject.Api\bin\Debug\netcoreapp3.1\log4net.config
+D:\TFS_Github\ArticleProject\ArticleProject.Api\bin\Debug\netcoreapp3.1\log4net.dll

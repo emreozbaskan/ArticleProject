@@ -11,7 +11,7 @@ namespace ArticleProject.BL.Abstract
     {
         IDataResult<Article> GetById(int Id);
         IDataResult<List<Article>> GetList(int skip, int take);
-        IDataResult<List<Article>> Search(string search, int skip, int take);
+        IDataResult<List<Article>> GetSearch(string search, int skip, int take);
         IDataResult<Article> Add(Article entity);
         IDataResult<Article> Update(Article entity);
         IResult Delete(Article entity);

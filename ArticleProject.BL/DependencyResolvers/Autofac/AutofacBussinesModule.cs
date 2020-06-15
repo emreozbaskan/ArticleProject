@@ -10,6 +10,9 @@ namespace ArticleProject.BL.DependencyResolvers.Autofac
     using DAL.Concrete.EntityFramework;
     using DAL.Abstract;
     using Core.Utilities.Security.JWT;
+    using global::Autofac.Extras.DynamicProxy;
+    using Castle.DynamicProxy;
+    using ArticleProject.Core.Utilities.Interceptors;
 
     public class AutofacBussinesModule : Module
     {
@@ -21,9 +24,18 @@ namespace ArticleProject.BL.DependencyResolvers.Autofac
             builder.RegisterType<EFCategoryRepository>().As<ICategoryRepository>();
             builder.RegisterType<CommentManager>().As<ICommentService>();
             builder.RegisterType<EFCommentRepository>().As<ICommentRepository>();
+            builder.RegisterType<ArticleManager>().As<IArticleService>();
+            builder.RegisterType<EFArticleRepository>().As<IArticleRepository>();
 
             builder.RegisterType<AutManager>().As<IAutService>();
             builder.RegisterType<JWTHelper>().As<ITokenHelper>();
+
+            var assembly = System.Reflection.Assembly.GetExecutingAssembly();
+            builder.RegisterAssemblyTypes(assembly).AsImplementedInterfaces().EnableInterfaceInterceptors(new ProxyGenerationOptions()
+            {
+                Selector = new AspectInterceptorSelector()
+            }).SingleInstance();
+
         }
     }
 }
